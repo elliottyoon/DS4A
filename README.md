@@ -8,7 +8,7 @@ DS4A/Empowerment Final Project Repository
 
 ---
 ## /src
-All the code behind the final project. (Timeseries line graphs seen in final report were trivial operations in Tableau)
+All the code behind the final project.
 
 ### Datasets:
 * brazildeforestation/def_area_2004_2019.csv *(cleaned)* -> cleaned_deforestation_data.csv
