@@ -67,6 +67,7 @@ We focused on two main datasets, Brazil Economic dataset; which contained nearly
 #### Brazil Economic Dataset:
 
 The original Brazil Economic Dataset we found contained nearly 1,500 different economic measures from the years 1960-2020. However, a large number of these metrics were the same, just measured in different ways (ex. GDP in constant US$ vs GDP(current LCU), furthermore a large number of these metrics did not make sense to use in comparison to deforestation. In the end we narrowed down the dataset to 35 different economic metrics that we believed were useful in helping to find a connection to deforestation. We also only took data from 2004-2019 since our second dataset with deforestation information only contains the years 2004-20019.
+
 ![p1](https://user-images.githubusercontent.com/33074434/129455923-83606b6d-45f7-44bf-b252-86f089a2caf6.png)
 
 
