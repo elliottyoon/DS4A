@@ -22,13 +22,9 @@ All the code behind the final project.
 
 **Team 39: Manas Ramesh, Zander Sargeant, Elliott Yoon, Colin Senat, Jotham Kriakos**
 
-![](RackMultipart20210814-4-9ex4mo_html_237499165a11f2b9.gif)
-
 We will explore the topic of deforestation, its industrial and environmental impacts, and why those can have disastrous negative effects. More specifically, we wish to draw connections between deforestation in a global scene and the economic and environmental context that surrounds it throughout time.
 
 At the most basic level, forests are imperative for the health of our planet. Densely populated rainforests provide necessary habitats and food for millions of animals to survive. Trees convert our excess amounts of carbon dioxide into the oxygen necessary for living beings to survive and help regulate greenhouse gas levels. Moreover, deforestation contributes to the addition of greenhouse gases to the atmosphere and can increase the amount of soil erosion. We want to identify a correlation between deforestation and quantifiable benchmarks of societal well-being to make the argument that deforestation should be proscribed. Examples of such benchmarks include economic loss, health issues, and community displacement.
-
-![](RackMultipart20210814-4-9ex4mo_html_237499165a11f2b9.gif)
 
 # **Introduction**
 
@@ -72,12 +68,12 @@ We focused on two main datasets, Brazil Economic dataset; which contained nearly
 
 The original Brazil Economic Dataset we found contained nearly 1,500 different economic measures from the years 1960-2020. However, a large number of these metrics were the same, just measured in different ways (ex. GDP in constant US$ vs GDP(current LCU), furthermore a large number of these metrics did not make sense to use in comparison to deforestation. In the end we narrowed down the dataset to 35 different economic metrics that we believed were useful in helping to find a connection to deforestation. We also only took data from 2004-2019 since our second dataset with deforestation information only contains the years 2004-20019.
 
-![](RackMultipart20210814-4-9ex4mo_html_5574db5a368ba84.png)
+
+---
 
 #### Brazil Deforestation Dataset:
 
-The Brazil Deforestation Dataset has information from nine different Brazilian States; Acre(AC), Amazonas (AM), Amapa (AP), Maranhao (MA), Mato Grosso (MT), Para (PA), Rondonia (RO), Roraima (RR), Tocantins (TO). The dataset measures the amount of annual deforestation in km from each of these states from the year 2004-2019. The dataset also includes the total deforestation from all of the states per year.
-
+The Brazil Deforestation Dataset has information from nine different Brazilian States; Acre(AC), Amazonas (AM), Amapa (AP), Maranhao (MA), Mato Grosso (MT), Para (PA), Rondonia (RO), Roraima (RR), Tocantins (TO). The dataset measures the amount of annual deforestation in km from each of these states from the year 2004-2019. The dataset also includes the total deforestation from all of the states per yea
 ![](RackMultipart20210814-4-9ex4mo_html_9ac596de613289ff.png)
 
 # **Exploratory Data Analysis:**
