@@ -67,6 +67,7 @@ We focused on two main datasets, Brazil Economic dataset; which contained nearly
 #### Brazil Economic Dataset:
 
 The original Brazil Economic Dataset we found contained nearly 1,500 different economic measures from the years 1960-2020. However, a large number of these metrics were the same, just measured in different ways (ex. GDP in constant US$ vs GDP(current LCU), furthermore a large number of these metrics did not make sense to use in comparison to deforestation. In the end we narrowed down the dataset to 35 different economic metrics that we believed were useful in helping to find a connection to deforestation. We also only took data from 2004-2019 since our second dataset with deforestation information only contains the years 2004-20019.
+![p1](https://user-images.githubusercontent.com/33074434/129455923-83606b6d-45f7-44bf-b252-86f089a2caf6.png)
 
 
 ---
@@ -74,59 +75,63 @@ The original Brazil Economic Dataset we found contained nearly 1,500 different e
 #### Brazil Deforestation Dataset:
 
 The Brazil Deforestation Dataset has information from nine different Brazilian States; Acre(AC), Amazonas (AM), Amapa (AP), Maranhao (MA), Mato Grosso (MT), Para (PA), Rondonia (RO), Roraima (RR), Tocantins (TO). The dataset measures the amount of annual deforestation in km from each of these states from the year 2004-2019. The dataset also includes the total deforestation from all of the states per yea
-![](RackMultipart20210814-4-9ex4mo_html_9ac596de613289ff.png)
+
+![p2](https://user-images.githubusercontent.com/33074434/129455932-2756f8ad-75f8-43ff-a6ae-d8f83083e2dd.png)
+
+---
 
 # **Exploratory Data Analysis:**
 
 ### Line plot of all Brazilian states deforestation per year
 
-![](RackMultipart20210814-4-9ex4mo_html_8c7a8ddaad1a6478.png)
+![p3](https://user-images.githubusercontent.com/33074434/129455941-14ddb25c-89c6-4bcc-963f-0e67dd1441f3.png)
+
 
 At first glance there is not a lot of information that we get from this picture. Since all of the plots used different scales on the y-axis it is difficult to analyze these graphs or begin to make observations.
 
 ### Line plot of all Brazilian states deforestation per year
 
-![](RackMultipart20210814-4-9ex4mo_html_d4f8572f07653138.png)
+![p4](https://user-images.githubusercontent.com/33074434/129455945-5be07bd8-112e-4efa-937c-a2b2661000b4.png)
 
 After combining all of the graphs into one larger graph we have a slightly clearer understanding of the data and the change of deforestation per year. Since all of the deforestation in the states seemed to follow a similar trend our group decided to primarily focus on total deforestation since we knew the aggregated data was not an instance of Simpson&#39;s paradox where the broken down data told a different story. Knowing this we added the total deforestation column from our deforestation dataset to our economics dataset resulting in a new dataset called final\_df which had all the information we needed. Going forward all our work was done solely using that dataset.
 
 ### Line plot of Total deforestation per year
 
-![](RackMultipart20210814-4-9ex4mo_html_6ac5b9606139507e.png)
+![p5](https://user-images.githubusercontent.com/33074434/129455952-b2f9b72b-74e9-43c8-b359-26635216dcda.png)
 
 Looking at just the total deforestation we can begin to see that the amount of deforestation that was occurring during the early 2000&#39;s was much more than in recent years. We can see that there have been successful efforts by the government to reduce the amount of deforestation that occurs. However, there has been a slight uptick in the amount of deforestation within the last couple years,
 
 ### Line plot of Brazil GDP per year
 
-![](RackMultipart20210814-4-9ex4mo_html_bd3c9de595f1a27e.png)
+![p6](https://user-images.githubusercontent.com/33074434/129455961-4e726968-7e2c-4ac6-9ada-f688168a1774.png)
 
 Now taking a look at the GDP of Brazil we can see almost the exact opposite of deforestation. Brazil&#39;s annual GDP started off very low in the early 2000&#39;s and gradually increased over the last two decades to nearly double what it was. However there was a slight dip in GDP in 2016.Line plot of annual GDP per capita growth
 
-![](RackMultipart20210814-4-9ex4mo_html_8b241b0405039eda.png)
+![p7](https://user-images.githubusercontent.com/33074434/129455971-4dce1a31-69c7-4299-941d-67d016bc92ab.png)
 
 Looking at the annual gdp per capita growth we can see after 2010, the gdp per capita growth decreased significantly in a short amount of time and in 2016 there was an increase again. But the overall gdp per capita growth compared to where it started in 2004 dropped, which could be a cause of many different things, but it is good to note that when looking at the deforestation graph, when deforestation went down over the last decade, the gdp per capita growth went down. But at the end of the deforestation by 2018, deforestation numbers were going up, which is the same with this graph where per capita growth numbers went up.
 
 ### T-test of GDP vs Deforestation
 
-![](RackMultipart20210814-4-9ex4mo_html_3cd8843135517caf.png)
+![p8](https://user-images.githubusercontent.com/33074434/129455991-c2ba63e1-ab50-4a5b-9c51-20e32a8afb9d.png)
 
 The results of this t-test were extremely promising. We had hypothesized that there was a negative correlation between GDP and Deforestation based on our exploratory data analysis. This t-test helped prove that there is a statistically significant relationship between deforestation and GDP and from there we felt more confident in our project.
 
 ### T-test of Total Deforestation vs Goods exports
 
-![](RackMultipart20210814-4-9ex4mo_html_3a147fb837153f84.png)
+![p9](https://user-images.githubusercontent.com/33074434/129455996-50785680-847b-4b37-ac19-1c536c14e5f3.png)
 
 This test helped prove that there were also connections between deforestation and other economic metrics. Based on this we can see that that the amount of goods that were exported were likely affected by the amount of deforestation that occurred,
 
 ### T-test of Total Deforestation vs Imports of Goods and Services
 
-![](RackMultipart20210814-4-9ex4mo_html_c866e5bd6ae5e464.png)
+![p10](https://user-images.githubusercontent.com/33074434/129455999-fe135822-b966-440c-9f5b-45a5f285ef44.png)
 
 Similar to the t-test above we can see a connection between deforestation and the number of goods and services imports.
 
 ### T-test of Total Deforestation vs GDP per Capita growth
 
-![](RackMultipart20210814-4-9ex4mo_html_f79047e7aff90416.png)
+![p11](https://user-images.githubusercontent.com/33074434/129456003-b19a0f58-eaec-4aa0-a37f-0b6daf32eb33.png)
 
 This t-test was also very useful because it showed that there was a statistically significant association and relationship with the amount of deforestation and the GDP growth per capita.
 
@@ -138,15 +143,15 @@ All of these t-tests were extremely useful in our exploration phase, they helped
 
 ### Heat Map of all the variables vs each other
 
-![](RackMultipart20210814-4-9ex4mo_html_d510e05844ef8c27.png)
+![p12](https://user-images.githubusercontent.com/33074434/129456004-84bd78aa-a1fb-4b12-9d2a-4b8e42feb385.png)
 
 **Heat Map of all statistically significant variables vs each other**
 
-![](RackMultipart20210814-4-9ex4mo_html_d7895d05082e87b4.png)
+![p13](https://user-images.githubusercontent.com/33074434/129456010-1a84c8b2-185c-449f-8af9-8a0d54fd8ec5.png)
 
 While at first glance the heat map is a lot to digest the best course of action would be to focus on the very last line of correlations which are correlations of all of the variables vs total deforestation. Contrary to what we hoped, GDP per capita growth had a positive correlation with deforestation so as one went up so did the other meaning deforestation helped GDP growth per capita. However, the other variables that we looked at such as annual GDP, goods exports and imports of goods and services all had almost a perfectly negative correlation with total deforestation. Which is exactly what we were looking for, the negative correlation meant as one variable went up the other went down and vice versa. So as total Deforestation went down GDP, goods exports and goods and services imports went up. Based on this information we can begin to say with less deforestation the economy will likely be better and grow.
 
-![](RackMultipart20210814-4-9ex4mo_html_f3da73e67dafc624.png)
+![p14](https://user-images.githubusercontent.com/33074434/129456017-d172f979-ca7e-4877-b72c-6845d36cf09b.png)
 
 The chart above has GDP and total deforestation plotted on the same graph. Here we can clearly see the correlation between GDP and total deforestation.
 
@@ -158,23 +163,23 @@ There are a few reasons we plotted two bubble maps instead of just one. Firstly,
 
 It can be readily seen that there was a massive decrease in deforestation from 2004-2012 and a marginally smaller amount and decline of deforestation in the years after. To interpret the plots, refer to the legend included with each plot that matches years with ring colors.
 
-![](RackMultipart20210814-4-9ex4mo_html_ec95cbc6574f40c0.png)
+![p15](https://user-images.githubusercontent.com/33074434/129456021-c4c79776-a862-42ea-b750-4af0b7899a8a.png)
 
-Deforestation per state from 2004-2012 ![](RackMultipart20210814-4-9ex4mo_html_c0483bdca83966ec.png)
+### Deforestation per state from 2004-2012 
+
+![p16](https://user-images.githubusercontent.com/33074434/129456026-96f64261-5c6c-4798-998d-d109bc31e25a.png)
 
 As you can see, the red rings (2004) were by far the largest indicating the greatest amount of deforestation. From there on, the amount of deforestation declines rapidly each year with each bubble getting smaller and smaller as the years progress.
 
-![](RackMultipart20210814-4-9ex4mo_html_ec95cbc6574f40c0.png)
-
 ### Bubble map of Deforestation per State from 2012-2019
 
-### ![](RackMultipart20210814-4-9ex4mo_html_3a5f9fd4b9ff60fa.png)
+![p17](https://user-images.githubusercontent.com/33074434/129456033-502ec63a-e34b-407e-9391-d523721ecb64.png)
 
 As you can see, the rings are much smaller and closer together, indicating both smaller amounts of deforestation and decline in deforestation. This is to be expected, since the aforementioned article explains that by far the largest amounts of deforestation took place before the year 2012 and this plot visualizes deforestation after 2012, further showing the magnitude (or lack thereof) of deforestation compared to that of the years before 2012.
 
 # **Description of Application:**
 
-![](RackMultipart20210814-4-9ex4mo_html_9b245a2b8bd61562.png) ![](RackMultipart20210814-4-9ex4mo_html_a88de488b33aa341.png)
+![p18](https://user-images.githubusercontent.com/33074434/129456040-51b53f98-50f2-4581-9b37-6a2288551b3e.png) ![p19](https://user-images.githubusercontent.com/33074434/129456043-57b3d0d8-cdbe-43b5-a474-9b263ceef3ea.png)
 
 Our application is what we show to clients and others in order to truly explain all of our work. We start off by showing the two bubble maps and showing how Brazil has made efforts to reduce the amount of deforestation taking place across the country. Then we describe our line graphs which show the clear image of when deforestation goes down GDP goes up. As well as go further in depth on the negative correlation between the two and other economic metrics. The reason we do this is so that people who see our application can see some of the potentially unseen benefits of stopping deforestation like how it benefits the economy. We hope that this incentivises governments and businesses to continue to reduce the amount of deforestation and show how it&#39;s a win- win situation for the environment and the economy.
 
